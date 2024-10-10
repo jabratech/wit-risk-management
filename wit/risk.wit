@@ -1,6 +1,7 @@
 interface handler {
     use jabratech:common/types.{response};
-    use types.{live-positions-risk-request, live-positions-risk-response};
+    use types.{live-positions-risk-request, live-positions-risk-response, bucket-live-positions-risk-request, bucket-live-positions-risk-response};
 
     get-live-positions-risk: func(request: live-positions-risk-request) -> result<live-positions-risk-response, response>;
+    get-bucket-live-positions-risk: func(request: bucket-live-positions-risk-request) -> result<bucket-live-positions-risk-response, response>;
 }
