@@ -41,7 +41,7 @@ interface types {
         message: string,
         bump-percentage-headers: list<string>,
         spot-headers: list<f64>,
-        data: bucket-live-positions-risk-data
+        data: list<bucket-live-positions-risk-data>
     }
 
     record bucket-live-positions-risk-data {
