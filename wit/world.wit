@@ -1,0 +1,5 @@
+package jabratech:risk-management;
+
+world risk {
+    export handler;
+}

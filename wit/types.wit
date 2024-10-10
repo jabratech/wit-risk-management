@@ -1,0 +1,27 @@
+interface types {
+    record live-positions-risk-request {
+        user-email: string,
+        pair: u8,
+        spot: f64,
+        bump-percentage: f64,
+        bump-count: u8,
+        party-a: u16,
+        party-b: option<list<u16>>
+    }
+    
+    record live-positions-risk-response {
+        code: s16,
+        message: string,
+        data: live-positions-risk-data
+    }
+    
+    record live-positions-risk-data {
+        headers: list<string>,
+        data: list<positions-risk>
+    }
+    
+    record positions-risk {
+        name: string,
+        values: list<f64>
+    }
+}
