@@ -5,8 +5,8 @@ interface types {
         spot: f64,
         bump-percentage: f64,
         bump-count: u8,
-        party-a: u16,
-        party-b: option<list<u16>>
+        party-a: u8,
+        party-b: option<list<u8>>
     }
     
     record live-positions-risk-response {
@@ -31,8 +31,8 @@ interface types {
         spot: f64,
         bump-percentage: f64,
         bump-count: u8,
-        party-a: u16,
-        party-b: option<list<u16>>,
+        party-a: u8,
+        party-b: option<list<u8>>,
         days: u16
     }
 
